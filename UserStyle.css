@@ -1,0 +1,42 @@
+﻿.sidebar
+{
+    position:fixed;
+    float:left;
+    height:600px;
+    color:White;
+    
+}
+.sidebar table
+{
+    width:100%;
+    padding:10%;        
+}
+.sidebar ul
+{
+    list-style:none
+}
+.sidebar ul li a
+{
+     
+    display:inline-block;
+	width:180px;
+	font-size:17px;
+	line-height:14px;
+	padding:18px 0 18px;
+	margin-top:0;
+	color:white;
+	text-align:left;
+       
+}
+.sidebar li a.active, .sidebar li a:hover 
+{
+	color:white;
+	font-weight:bold;
+}
+.ppic
+{
+    border-width:thick;
+    border-radius:100% 100% 100% 100%;
+    -moz-border-radius:100% 100% 100% 100%;
+    -webkit-border-radius:100% 100% 100% 100%;
+}

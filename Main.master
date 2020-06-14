@@ -1,0 +1,35 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Main.master.cs" Inherits="Main" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server" style ="background-color:rgb(240, 230, 250)">
+        <div style ="height:auto;margin-left:-8px;margin-top:-8px;padding:0px;width:101.2%;float:left;background-color:rgb(240, 230, 250)">
+            <%--header--%>
+            <div style ="height:80px;width:100%;float:left;background-color:indigo;position:fixed">
+                <div style ="float:left;margin-left:20px;">
+                    <h1><asp:Label ID="lblSName" runat="server" Text="Assignment 1" ForeColor ="White"></asp:Label></h1>
+                </div>
+                <div style ="float:right;margin:20px;margin-top:30px">
+                    <asp:HyperLink ID="hypHome" runat="server" ForeColor ="white" NavigateUrl = "~/Home.aspx">Home</asp:HyperLink>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <asp:HyperLink ID="hypLogin" runat="server" ForeColor ="white" NavigateUrl = "~/Login.aspx">Login</asp:HyperLink>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <asp:HyperLink ID="hypSignup" runat="server" ForeColor ="white" NavigateUrl = "~/SignUp.aspx">SignUp</asp:HyperLink>
+                </div>
+            </div>     
+            <div style ="width:100%">
+                <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+                </asp:ContentPlaceHolder>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
